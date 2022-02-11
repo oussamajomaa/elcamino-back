@@ -1,0 +1,16 @@
+.login{
+    width: 375px;
+    margin: auto;
+}
+.item{
+display: flex;
+justify-content: center;
+}
+
+
+h3{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+

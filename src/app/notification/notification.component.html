@@ -1,0 +1,36 @@
+
+    <div class="add-notification">
+        <h1 class="text-center">Ajouter une notification</h1>
+        <div class="col">
+            <mat-form-field class="w-100" appearance="fill">
+                <mat-label>Catégorie</mat-label>
+                <mat-select [(ngModel)]="category">
+                    <mat-option value="cours">Cours</mat-option>
+                    <mat-option value="event">Evénement</mat-option>
+                    <mat-option value="parents">Association des parents</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field class="w-100" appearance="fill">
+                <mat-label>Titre</mat-label>
+                <input matInput placeholder="Titre" [(ngModel)]="title">
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <mat-form-field class="w-100" appearance="fill">
+                <mat-label>Contenu</mat-label>
+                <textarea matInput placeholder="Contenu" [(ngModel)]="body" rows="5"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="col">
+            <button 
+                (click)="sendNotification()"
+                mat-raised-button 
+                class="w-100 primary" 
+                >
+                Envoyer
+            </button>
+        </div>
+    </div>
+   
